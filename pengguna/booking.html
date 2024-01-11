@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
- 
+
   <title>SerbaEvents</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -17,7 +17,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +67,7 @@
               <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle" height="36px">
               <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
             </a><!-- End Profile Iamge Icon -->
-  
+
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
               <li class="dropdown-header">
                 <h6>Kevin Anderson</h6>
@@ -73,7 +75,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-  
+
               <li>
                 <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
                   <i class="bi bi-person"></i>
@@ -83,7 +85,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-  
+
               <li>
                 <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
                   <i class="bi bi-gear"></i>
@@ -93,7 +95,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-  
+
               <li>
                 <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                   <i class="bi bi-question-circle"></i>
@@ -103,83 +105,91 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-  
+
               <li>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <i class="bi bi-box-arrow-right"></i>
                   <span>Sign Out</span>
                 </a>
               </li>
-  
+
             </ul><!-- End Profile Dropdown Items -->
           </li><!-- End Profile Nav -->
         </ul>
       </nav><!-- .navbar -->
-    
+
 
     </div>
   </header><!-- End Header -->
 
-<br>
+  <br>
   <main id="main">
 
     <!-- ======= Book A Table Section ======= -->
     <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Sewa Kendaraan</h2>
+
+
+
+        <!-- Card -->
+        <div class="card">
+          <!-- Header -->
+          <div class="card-header">
+            <br>
+            <div class="section-header">
+              <h2>Sewa Kendaraan</h2>
+            </div>
+          </div>
+          <!-- End Header -->
+
+          <!-- Table -->
+          <div class="card-body p-5 overflow-y-auto">
+            <!-- Grid -->
+            <div class="row g-2">
+              <div class="mb-3 row">
+                <label for="nama_obat" class="col-sm-3 col-form-label">Tujuan Event</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="tujuaneven">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="nama_obat" class="col-sm-3 col-form-label">Titik Keberangkatan</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="jemputan">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="nama_obat" class="col-sm-3 col-form-label">Harga</label>
+                <div class="col-sm-9">
+                  <input type="number" class="form-control" id="harga" placeholder="Start-From yang tertera di table">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="nama_obat" class="col-sm-3 col-form-label">Keterangan</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="keterangan">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Table -->
+
+          <!-- Footer -->
+          <div class="card-footer d-flex justify-content-end p-4 text-blue-gray-500">
+            <div>
+              <a href="index.html" class="btn btn-primary" data-toggle="modal" style="margin-right: 10px;">
+                Cancel
+              </a>
+            </div>
+            <button type="submit" onclick="postTambahObat()" class="login-button">Save</button>
+          </div>
+          <!-- End Footer -->
         </div>
-
-        <div class="row g-0">
-
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Book a Table</button></div>
-            </form>
-          </div><!-- End Reservation Form -->
-
-        </div>
-
+        <!-- End Card -->
       </div>
-    </section><!-- End Book A Table Section -->
+
+
 
   </main><!-- End #main -->
 
@@ -251,7 +261,8 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
@@ -265,6 +276,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script type="module"
+    src="https://cdn.jsdelivr.net/gh/serbaevents/cdnJS@0.0.5/js-cdn/sijs-JsPengguna/insertTiket.js"></script>
+  <script type="module"
+    src="https://cdn.jsdelivr.net/gh/serbaevents/cdnJS@0.0.5/js-cdn/sijs-JsPengguna/getEvent.js"></script>
+  <script type="module" src="../pengguna/assets/sijs/getEventPengguna.js"></script>
 
 </body>
 

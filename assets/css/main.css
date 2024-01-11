@@ -38,12 +38,12 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--font-default);
   text-decoration: none;
 }
 
 a:hover {
-  color: #ec2727;
+  color: #b6b6bf;
   text-decoration: none;
 }
 
@@ -1206,4 +1206,24 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+.table {
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 30px;
+  padding: 25px;
+}
+
+.table th, .table td {
+  text-align: center;
+  
+}
+
+.about ul li {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 5px;
+  font-family: var(--font-secondary);
+  text-align: justify;
 }
