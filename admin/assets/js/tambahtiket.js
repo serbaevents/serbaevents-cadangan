@@ -24,7 +24,7 @@ const responseData = (result) => {
       text: result.message,
     }).then(() => {
       // Redirect to the success URL
-      window.location.href = "admin/datatiket.html";
+      window.location.href = "datatiket.html";
     });
   } else {
     Swal.fire({
