@@ -1227,3 +1227,9 @@ section {
   font-family: var(--font-secondary);
   text-align: justify;
 }
+
+#ex1-tab-1, #ex1-tab-2, #ex1-tab-3, #ex1-tab-4, #ex1-tab-5{
+  color: #64748b;
+  font-size: 0.875rem;
+  padding: 1.05rem 0rem;
+}
