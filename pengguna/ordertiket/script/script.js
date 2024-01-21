@@ -85,8 +85,7 @@ const checkOut = () => {
         'Country: ' + userData.country + ' \r\n ' +
         'State: ' + userData.state + '\r\n ' +
         'City: ' + userData.city + '\r\n ' +
-        'Item1: Name-' + userData.cart[0].itemName + ' | qty-' + userData.cart[0].quantity + ' | price-' + userData.cart[0].totalPrice + '\r\n ' +
-        'Item2: Name-' + userData.cart[1].itemName + ' | qty-' + userData.cart[1].quantity + ' | price-' + userData.cart[1].totalPrice;
+        'Item1: Name-' + userData.cart[0].itemName + ' | qty-' + userData.cart[0].quantity + ' | price-' + userData.cart[0].totalPrice;
 
     const textToBLOB = new Blob([data], { type: 'text/plain' });
     const sFileName = 'formData.txt';	   // The file to save the data.

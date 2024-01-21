@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/konserr.jpeg');
     background-position: center;
     background-size: cover;
 }
@@ -150,7 +150,7 @@ input:focus {
     align-items: center;
     color: #fff;
     cursor: pointer;
-    background: #8eb852;
+    background: #f4c176;
     text-transform: uppercase;
     justify-content: center;
     letter-spacing: 0.063rem;
@@ -256,7 +256,7 @@ input:focus {
 #totalPrice {
     background-color: #FFFFFF;
     font-size: 0.938rem;
-    color: #92C752;
+    color: #f4c176;
     font-family: 'Lato-Bold', sans-serif;
     margin-left: 4.25rem;
 }

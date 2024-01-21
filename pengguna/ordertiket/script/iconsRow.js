@@ -4,7 +4,10 @@ let iconsRow = [
         "imgId": 1,
         "imgCallerId": 99
     },
-
+    {
+        "imgId": 2,
+        "imgCallerId": 99
+    },
     {
         "imgId": 3,
         "imgCallerId": 99
